@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Pape Scissor</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="name">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSOR</p>
+        </div>
+        <div class="score">
+          <div>
+            <h3>COMPUTER SCORE</h3>
+            <p id="cs" class="score-view">0</p>
+          </div>
+          <div>
+            <h3>YOUR SCORE</h3>
+            <p id="ys" class="score-view">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="selector-div-container">
+            <div class="toggle" >
+                <div class="selector-div">
+                    <div
+                      style="
+                        background-color: #0074b6;
+                        border-radius: 50%;
+                        width: 110px;
+                        height: 110px;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        padding: 10px;
+                      "
+                      id="stone"
+                    >
+                      <img
+                        style="
+                          width: 90px;
+                          height: 90px;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          padding: 20px;
+                          margin: auto;
+                        "
+                        src="/public/stone.svg"
+                      />
+                    </div>
+                    <div
+                      style="
+                        background-color: #BD00FF;
+                        border-radius: 50%;
+                        width: 110px;
+                        height: 110px;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        padding: 10px;
+                      "
+                      id="scissor"
+                    >
+                      <img
+                        style="
+                          width: 90px;
+                          height: 90px;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          padding: 20px;
+                          margin: auto;
+                        "
+                        src="/public/scissor.svg"
+                      />
+                    </div>
+                </div>
+ 
+                    <div
+                      style="
+                        width: 110px;
+                        height: 110px;
+                        background-color: #FFA943;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                      class="postion-paper"
+                      id="paper"
+                    >
+                      <img
+                        style="
+                          width: 90px;
+                          height: 90px;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          padding: 20px;
+                          margin: auto;
+                        "
+                        src="/public/paper.svg"
+                      />
+                    </div>
+
+                  <div class="line-1" ></div>
+                  <div class="line-2" ></div>
+                  <div class="line-3"></div>
+            </div>
+            <div class="game-div">
+                <div class="you-picked" >
+                    <p>You Picked</p>
+                    <div id="you-logo" ></div>
+                </div>
+                <div class="result" >
+                    <p id="winner" ></p>
+                    <p class="pc" >AGAINST PC</p>
+                    <button id="play-again">play again</button>
+                </div>
+                <div class="pc-picked" >
+                    <p>pc picked</p>
+                    <div id="pc-logo" >
+
+                    </div>
+                </div>
+          </div>
+      </div>
+      <div class="rule-box">
+        <div class="rule">
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <div class="cross" >
+                <img src="/public/cross.svg" />
+            </div>
+          </div>
+      </div>
+      <button class="rule-btn" >
+        RULES
+      <button/>
+      </div>
+    </div>
+    <script src="index.js" ></script>
+  </body>
+</html>

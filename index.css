@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #8CC461;
+}
+
+/* score card */
+.main {
+    width: 800px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.name p{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.score {
+    display: flex;
+    gap: 20px;
+}
+
+.score div {
+    padding: 10px;
+    background-color: #fff;
+    width: 140px;
+    height: 128px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.score-view {
+    font-size: 68px;
+    font-weight: 700;
+}
+
+/* selector */
+
+.toggle{
+    width: 600px;
+    height: 380px;
+}
+
+.selector-div-container{
+    width: 600px;
+    height: 380px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.selector-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postion-paper{
+    position: absolute;
+    right: 250px;
+    top: 250px;
+}
+
+.line-1{
+    width: 580px;
+    height: 20px;
+     background: rgba(0, 0, 0, 0.64);
+     position: absolute;
+     top: 50px;
+     z-index: -1;
+    right: 10px;
+    left: 10px;
+}
+
+.line-2 {
+     width: 300px;
+     height: 20px;
+     background: rgba(0, 0, 0, 0.64);
+     position: absolute;
+     transform: rotate(45deg);
+     top: 150px;
+     z-index: -1;
+}
+
+.line-3{
+    width: 320px;
+     height: 20px;
+     background: rgba(0, 0, 0, 0.64);
+     position: absolute;
+     transform: rotate(135deg);
+     top: 150px;
+     z-index: -1;
+     right: 0;
+}
+
+/* game started*/
+
+.game-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.you-picked,.pc-picked p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.you-logo{
+    margin-top: 40px;
+}
+
+.pc-logo{
+    margin-top: 40px;
+}
+
+.result {
+    text-align: center;
+}
+
+.result button{
+    background-color: #FFFFFF;
+    width: 170px;
+    border: none;
+    text-transform: capitalize;
+    height: 44px;
+}
+
+.pc {
+    font-size: 25px;
+    color: #fff;
+}
+
+#winner {
+    font-size: 39px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.rule-btn{
+    width: 119px;
+    height: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    color:#fff;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.rule-box{
+    width: 270px;
+    position:absolute;
+    right: 40px;
+    bottom: 100px;
+    display: none;
+}
+
+.rule {
+    background-color: #004429;
+    border: 10px solid #fff;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.cross {
+    background-color: red;
+    border-radius: 50%;
+    padding: 15px;
+    border: 10px solid #fff;
+    position: absolute;
+    right: -30px;
+    top: -50px;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.cross{
+    position:absolute;
+}
